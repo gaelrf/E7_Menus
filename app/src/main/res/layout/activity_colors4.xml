@@ -16,7 +16,7 @@
         android:layout_weight="1">
 
         <View
-            android:id="@+id/view11"
+            android:id="@+id/view111"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -25,7 +25,7 @@
         </View>
 
         <View
-            android:id="@+id/view12"
+            android:id="@+id/view112"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -41,7 +41,7 @@
         android:layout_weight="1">
 
         <View
-            android:id="@+id/view21"
+            android:id="@+id/view121"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -50,7 +50,7 @@
         </View>
 
         <View
-            android:id="@+id/view22"
+            android:id="@+id/view122"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

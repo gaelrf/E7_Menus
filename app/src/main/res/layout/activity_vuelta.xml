@@ -7,14 +7,18 @@
     android:gravity="center">
 
     <Button
+        android:id="@+id/btnAtras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volver Atras"/>
     <Button
+        android:id="@+id/btnInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="Ir a inicio"/>
     <Button
+        android:id="@+id/btnFinalizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"

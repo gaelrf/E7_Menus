@@ -2,12 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFF0000"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:text="Elige un color:" />
 
     <LinearLayout
@@ -16,7 +19,7 @@
         android:layout_weight="1">
 
         <View
-            android:id="@+id/view211"
+            android:id="@+id/view411"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -25,7 +28,7 @@
         </View>
 
         <View
-            android:id="@+id/view212"
+            android:id="@+id/view412"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -34,7 +37,7 @@
         </View>
 
         <View
-            android:id="@+id/view213"
+            android:id="@+id/view413"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -50,7 +53,7 @@
         android:layout_weight="1">
 
         <View
-            android:id="@+id/view221"
+            android:id="@+id/view421"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -59,7 +62,7 @@
         </View>
 
         <View
-            android:id="@+id/view222"
+            android:id="@+id/view422"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -68,11 +71,44 @@
         </View>
 
         <View
-            android:id="@+id/view223"
+            android:id="@+id/view423"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/teal_700">
+
+        </View>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/view431"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black">
+
+        </View>
+
+        <View
+            android:id="@+id/view432"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/teal_200">
+
+        </View>
+
+        <View
+            android:id="@+id/view433"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/purple_500">
 
         </View>
 
@@ -85,18 +121,21 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="1" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="2"
             android:text="2" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="3" />
 

@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btnPantalla1.setOnClickListener(onClickListener);
         btnPantalla2.setOnClickListener(onClickListener);
         btnPantalla3.setOnClickListener(onClickListener);
+        btnPantalla4.setOnClickListener(onClickListener);
 
     }
 
@@ -57,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
                 break;
+
+            case R.id.btnPantalla4:
+
+                intent = new Intent(MainActivity.this,Colors9Deletable.class);
+                startActivity(intent);
+
 
         }
 

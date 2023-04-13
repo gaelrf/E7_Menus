@@ -3,15 +3,16 @@ package com.example.e3_activitys_2023;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 
 public class Colors4 extends AppCompatActivity {
 
-    View view11;
-    View view12;
-    View view21;
-    View view22;
+    View view111;
+    View view112;
+    View view121;
+    View view122;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,15 +20,15 @@ public class Colors4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colors4);
 
-        view11 = findViewById(R.id.view11);
-        view12 = findViewById(R.id.view12);
-        view21 = findViewById(R.id.view21);
-        view22 = findViewById(R.id.view22);
+        view111 = findViewById(R.id.view111);
+        view112 = findViewById(R.id.view112);
+        view121 = findViewById(R.id.view121);
+        view122 = findViewById(R.id.view122);
 
-        view11.setOnClickListener(onClickListener);
-        view12.setOnClickListener(onClickListener);
-        view21.setOnClickListener(onClickListener);
-        view22.setOnClickListener(onClickListener);
+        view111.setOnClickListener(onClickListener);
+        view112.setOnClickListener(onClickListener);
+        view121.setOnClickListener(onClickListener);
+        view122.setOnClickListener(onClickListener);
 
     }
 
@@ -35,35 +36,10 @@ public class Colors4 extends AppCompatActivity {
 
         Intent i = new Intent(this, Vuelta.class);
 
-        switch (v.getId()){
-
-            case R.id.view11:
-
-                i.putExtra("color",R.color.black);
-                startActivity(i);
-                break;
-
-            case R.id.view12:
-
-                i.putExtra("color",R.color.teal_200);
-                startActivity(i);
-                break;
-
-            case R.id.view21:
-
-
-                i.putExtra("color",R.color.purple_700);
-                startActivity(i);
-                break;
-
-            case R.id.view22:
-
-
-                i.putExtra("color",R.color.purple_200);
-                startActivity(i);
-                break;
-
-        }
+        v.getBackground();
+        i.putExtra("color",((ColorDrawable)v.getBackground()).getColor());
+        i.putExtra("buttons", 2);
+        startActivity(i);
 
     };
 
