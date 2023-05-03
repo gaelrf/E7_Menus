@@ -2,6 +2,7 @@ package com.example.e3_activitys_2023;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnPantalla2;
     Button btnPantalla3;
     Button btnPantalla4;
+    AlertDialog.Builder ventana;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnPantalla2 = findViewById(R.id.btnPantalla2);
         btnPantalla3 = findViewById(R.id.btnPantalla3);
         btnPantalla4 = findViewById(R.id.btnPantalla4);
+        ventana = new AlertDialog.Builder(this);
 
         btnPantalla1.setOnClickListener(onClickListener);
         btnPantalla2.setOnClickListener(onClickListener);
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener onClickListener = v -> {
 
         Intent intent;
-
+        
         switch (v.getId()){
 
             case R.id.btnPantalla1:

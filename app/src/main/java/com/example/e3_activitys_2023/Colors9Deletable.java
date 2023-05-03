@@ -75,6 +75,7 @@ public class Colors9Deletable extends AppCompatActivity {
                 if (gusta == 1) {
 
                     evaluar.setVisibility(View.VISIBLE);
+                    Toast.makeText(this, "Me alegra de que te guste", Toast.LENGTH_SHORT).show();
 
                 } else if (gusta == 2) {
 
